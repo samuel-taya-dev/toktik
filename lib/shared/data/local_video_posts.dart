@@ -1,12 +1,12 @@
 final List<Map<String, dynamic>> videoPosts = [
   {
-    'name': 'Subiendo escaleras automáticas',
+    'name': 'Animate a vivir nuevas experienas',
     'videoUrl': 'assets/videos/1.mp4',
     'likes': 23230,
     'views': 1523,
   },
   {
-    'name': 'Planta apreciada por peatones',
+    'name': 'Mira al cielo, no te olvides descansar',
     'videoUrl': 'assets/videos/2.mp4',
     'likes': 24230,
     'views': 1343,
@@ -24,25 +24,25 @@ final List<Map<String, dynamic>> videoPosts = [
     'views': 2300,
   },
   {
-    'name': 'El COVID no me afecta',
+    'name': 'Publicidad',
     'videoUrl': 'assets/videos/5.mp4',
     'likes': 3230,
     'views': 31030,
   },
   {
-    'name': 'No quiero ir a trabajar hoy señor Stark',
+    'name': 'No te olvides de tus sueños',
     'videoUrl': 'assets/videos/6.mp4',
     'likes': 10,
     'views': 330,
   },
   {
-    'name': 'Limpiar nunca fue tan divertido',
+    'name': 'Bible verse',
     'videoUrl': 'assets/videos/7.mp4',
     'likes': 1320,
     'views': 33032,
   },
   {
-    'name': '¿Ya llegamos a la India?... umm si',
+    'name': 'Publicidad',
     'videoUrl': 'assets/videos/8.mp4',
     'likes': 342,
     'views': 3332,
