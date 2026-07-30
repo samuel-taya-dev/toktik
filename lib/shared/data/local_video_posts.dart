@@ -1,6 +1,6 @@
 final List<Map<String, dynamic>> videoPosts = [
   {
-    'name': 'Animate a vivir nuevas experienas',
+    'name': 'Anímate a vivir nuevas experienas',
     'videoUrl': 'assets/videos/1.mp4',
     'likes': 23230,
     'views': 1523,
@@ -36,7 +36,7 @@ final List<Map<String, dynamic>> videoPosts = [
     'views': 330,
   },
   {
-    'name': 'Bible verse',
+    'name': 'Versículo del día',
     'videoUrl': 'assets/videos/7.mp4',
     'likes': 1320,
     'views': 33032,
