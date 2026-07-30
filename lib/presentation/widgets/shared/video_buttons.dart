@@ -13,18 +13,24 @@ class VideoButtons extends StatelessWidget {
     return Column(
       children: [
         _CustomIconButton(
-            value: video.likes,
-            iconData: Icons.favorite,
-            iconColor: Colors.red),
+          value: video.likes,
+          iconData: Icons.favorite,
+          iconColor: Colors.red,
+        ),
         const SizedBox(height: 10),
         _CustomIconButton(
-            value: video.views, iconData: Icons.remove_red_eye_outlined),
+          value: video.views,
+          iconData: Icons.remove_red_eye_outlined,
+        ),
         const SizedBox(height: 10),
         SpinPerfect(
-            infinite: true,
-            duration: const Duration(seconds: 5),
-            child: const _CustomIconButton(
-                value: 0, iconData: Icons.play_circle_outline)),
+          infinite: true,
+          duration: const Duration(seconds: 5),
+          child: const _CustomIconButton(
+            value: 0,
+            iconData: Icons.play_circle_outline,
+          ),
+        ),
       ],
     );
   }
@@ -48,14 +54,10 @@ class _CustomIconButton extends StatelessWidget {
     return Column(
       children: [
         IconButton(
-            onPressed: () {},
-            icon: Icon(
-              iconData,
-              color: color,
-              size: 30,
-            )),
-        if (value > 0)
-          Text('${HumanFormats.humanRedableNumber(value.toDouble())}'),
+          onPressed: () {},
+          icon: Icon(iconData, color: color, size: 30),
+        ),
+        if (value > 0) Text(HumanFormats.humanRedableNumber(value.toDouble())),
       ],
     );
   }
