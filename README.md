@@ -26,7 +26,7 @@ This project is part of my mobile development learning journey through **DevTall
 - **Framework:** [Flutter](https://flutter.dev/) (SDK >= 3.0.0)
 - **Language:** [Dart](https://dart.dev/)
 - **State Management:** [Provider](https://pub.dev/packages/provider)
-
+*Work in progress... another tech stack will added soon*
 ---
 
 ## 🚀 Getting Started
