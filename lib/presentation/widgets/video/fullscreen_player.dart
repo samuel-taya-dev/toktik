@@ -7,8 +7,11 @@ class FullScreenPlayer extends StatefulWidget {
   final String videoUrl;
   final String caption;
 
-  const FullScreenPlayer(
-      {super.key, required this.videoUrl, required this.caption});
+  const FullScreenPlayer({
+    super.key,
+    required this.videoUrl,
+    required this.caption,
+  });
 
   @override
   State<FullScreenPlayer> createState() => _FullScreenPlayerState();
@@ -49,8 +52,9 @@ class _FullScreenPlayerState extends State<FullScreenPlayer> {
           return const Center(child: CircularProgressIndicator(strokeWidth: 2));
         }
         return AspectRatio(
-            aspectRatio: controller.value.aspectRatio,
-            child: VideoPlayer(controller));
+          aspectRatio: controller.value.aspectRatio,
+          child: VideoPlayer(controller),
+        );
       },
     );
   }
