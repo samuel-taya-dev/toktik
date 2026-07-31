@@ -1,6 +1,6 @@
-# 🎬 TokTik - Vertical Video Player App
+# 🎬 TokTik - Short Vertical Video Player App
 
-**TokTik** is a mobile application built with **Flutter** and **Dart** that clones the core user experience of TikTok. The app focuses on vertical video scrolling, real-time video playback control, state management, and Clean Architecture.
+**TokTik** is a dynamic mobile application built with **Flutter** and **Dart** that clones the core user experience of TikTok. The app features an infinite vertical scrolling feed, custom video controls, reactive UI animations, and formatted metric counters.
 
 This project is part of my mobile development learning journey through **DevTalles** (taught by Fernando Herrera).
 
@@ -8,16 +8,20 @@ This project is part of my mobile development learning journey through **DevTall
 
 ## 📸 Demo & Preview
 
-*Work in progress... Demo GIF will be added upon completion.*
+| Application View |
+| :---: |
+| ![TokTik Preview](docs/toktik_preview.gif) |
 
 ---
 
-## ✨ Planned Features & Key Learnings
+## ✨ Features & Key Learnings
 
-- 📱 **Vertical Scroll Video Player:** Infinite smooth scrolling feed for short videos.
-- ⚙️ **State Management:** Reactive state handling for video controllers and user interactions.
-- 🏗️ **Clean Architecture:** Domain, Data, and Presentation layer separation.
-- 🎨 **Custom UI Components:** Reusable overlay buttons, gradient masks, and progress indicators.
+- 📱 **Vertical Scroll Video Player:** Smooth vertical scrolling feed for short video playback.
+- 🎬 **Video Playback Controls:** Tap-to-pause and play functionality integrated with local and remote video streams.
+- 🎨 **Animated UI Components:** Reactive animations for interactive elements such as likes and action buttons.
+- 📊 **Number & Currency Formatting:** Compact metric formatting for view counters and likes (e.g., converting 1,500,000 to 1.5M).
+- ⚙️ **State Management:** Reactive data flow using Provider to synchronize video controllers and screen overlays.
+- 🏗️ **Clean Architecture Foundations:** Modular separation of Data Models, Repositories, and Presentation Widgets.
 
 ---
 
@@ -26,9 +30,12 @@ This project is part of my mobile development learning journey through **DevTall
 - **Framework:** [Flutter](https://flutter.dev/) (SDK >= 3.0.0)
 - **Language:** [Dart](https://dart.dev/)
 - **State Management:** [Provider](https://pub.dev/packages/provider)
-*Work in progress... another tech stack will added soon*
----
+- **Key Packages:**
+  - [`video_player`](https://pub.dev/packages/video_player) - Low-level video controller and playback engine.
+  - [`animate_do`](https://pub.dev/packages/animate_do) - Smooth UI animations for buttons and overlay icons.
+  - [`intl`](https://pub.dev/packages/intl) - Internationalization and number/metric formatting.
 
+---
 ## 🚀 Getting Started
 
 Follow these steps to run the project locally:
