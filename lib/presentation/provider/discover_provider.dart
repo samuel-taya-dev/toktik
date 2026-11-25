@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:toktik/shared/data/local_video_posts.dart';
+import 'package:toktik/domain/repositories/video_post_repository.dart';
 import 'package:toktik/domain/entities/video_post.dart';
-import 'package:toktik/infrastructure/models/local_video_model.dart';
 
 class DiscoverProvider extends ChangeNotifier {
   // (look up)ChangeNotifier -> convierte a esta clase en una antena emisora del provider
-  //Todo: Repository, DataSource
+  final VideoPostRepository videoPostRepository;
 
   bool initialLoading = true;
-
   //Lista donde estaran los videos a mostrar
   List<VideoPost> videos = [];
+
+  DiscoverProvider({required this.videoPostRepository});
 
   //Funcion para cargar videos
   Future<void> loadNextPage() async {
@@ -19,11 +19,18 @@ class DiscoverProvider extends ChangeNotifier {
         const Duration(seconds: 2)); //simula una pausa de 2 segundos
     */
     //Hace el mapeo para depender de entidades limpias y no de un Json Puro
+    /*
     final List<VideoPost> newVideos = videoPosts
         .map(
           (video) => LocalVideoModel.fromJson(video).toVideoPostEntity(),
         )
         .toList();
+
+    */
+
+    final newVideos = await videoPostRepository.getTrendingVideosByPage(
+      page: 1,
+    );
     //(arriba)new Videos es una Lista momentanea donde todo se agregara a videos
     videos.addAll(newVideos);
 
